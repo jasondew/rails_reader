@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require "lib/sass_on_heroku"
 
 # Auto-require default libraries and those for the current Rails environment.
 Bundler.require :default, Rails.env
@@ -35,6 +36,17 @@ module RailsReader
     #   g.template_engine :erb
     #   g.test_framework  :test_unit, :fixture => true
     # end
+
+    config.middleware.use(SassOnHeroku) if Rails.env == "production"
+
+    config.session_store :cookie_store, :key => "rails_reader_session"
+    config.cookie_secret = "0ah91h2roinf0hw08rvha0wh02s09h0zxycoishd908hwa0ifna0w93hurfoisdflaksn2hsdln093c08qhnwfv"
+
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework  :test_unit, :fixture => true
+      g.fixture_replacement :factory_girl, :dir => "test/factories"
+    end
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters << :password
