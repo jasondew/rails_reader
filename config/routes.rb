@@ -1,4 +1,7 @@
 RailsReader::Application.routes.draw do |map|
+  resources :source_files
+  match "source_file/*id" => "source_files#show", :as => :source_file
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -49,7 +52,7 @@ RailsReader::Application.routes.draw do |map|
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :to => "reader#index"
+  root :to => "source_files#index"
 
   # See how all your routes lay out with "rake routes"
 
