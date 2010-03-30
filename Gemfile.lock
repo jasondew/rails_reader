@@ -3,7 +3,7 @@ dependencies:
   rails: 
     group: 
     - :default
-    version: = 3.0.0.beta
+    version: ">= 0"
   mysql: 
     group: 
     - :development
@@ -30,23 +30,26 @@ specs:
 - i18n: 
     version: 0.3.6
 - memcache-client: 
-    version: 1.7.8
+    version: 1.8.1
 - tzinfo: 
     version: 0.3.18
 - activesupport: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - activemodel: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - erubis: 
     version: 2.6.5
 - rack: 
     version: 1.1.0
 - rack-mount: 
-    version: 0.4.7
+    version: 0.6.1
 - rack-test: 
     version: 0.5.3
 - actionpack: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - mime-types: 
     version: "1.16"
 - polyglot: 
@@ -60,13 +63,16 @@ specs:
 - text-format: 
     version: 1.0.0
 - actionmailer: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - arel: 
-    version: 0.2.1
+    version: 0.3.3
 - activerecord: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - activeresource: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - bundler: 
     version: 0.9.13
 - factory_girl: 
@@ -79,13 +85,15 @@ specs:
 - thor: 
     version: 0.13.4
 - railties: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - rails: 
-    version: 3.0.0.beta
+    version: 3.0.0.beta1
+    source: 2
 - shoulda: 
     version: 2.10.3
     source: 1
-hash: d13d28d63562310fbc66f846f2ad9de4b367a5ef
+hash: ed60489373e5badfe8ca7df06d47e5eafda11279
 sources: 
 - Git: 
     uri: git://github.com/thoughtbot/factory_girl.git
@@ -97,5 +105,9 @@ sources:
     branch: rails3
     git: git://github.com/jasondew/shoulda.git
     ref: 7e7e351c0043425639d98fc988c004bb672a8626
+- Git: 
+    uri: git://github.com/rails/rails.git
+    git: git://github.com/rails/rails.git
+    ref: 331327d3919a633679dd3f434d13173fa8df010f
 - Rubygems: 
     uri: http://gemcutter.org
