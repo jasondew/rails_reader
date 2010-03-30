@@ -1,6 +1,6 @@
 source 'http://gemcutter.org'
 
-gem "rails", "3.0.0.beta"
+gem "rails", :git => "git://github.com/rails/rails.git" 
 gem "haml"
 
 group :development do
