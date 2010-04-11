@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Rails Reader
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+
+  %body
+    #content
+      %h1 Rails Reader
+      = raw flashes
+      = yield

@@ -40,7 +40,7 @@ module RailsReader
     config.middleware.use(SassOnHeroku) if Rails.env == "production"
 
     config.session_store :cookie_store, :key => "rails_reader_session"
-    config.cookie_secret = "0ah91h2roinf0hw08rvha0wh02s09h0zxycoishd908hwa0ifna0w93hurfoisdflaksn2hsdln093c08qhnwfv"
+    config.cookie_secret = "06b12e557a259745d3b7ee8ec787186c3147fe0ca484ca12d4e3f368b3ae693b54a0dcda238bbd60decba4e77f52241c9e1534c115d029e73486cde3029f030f"
 
     config.generators do |g|
       g.template_engine :haml

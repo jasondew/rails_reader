@@ -1,3 +1,3 @@
-%h1= params[:id]
+%h2= params[:id]
 
-%pre= File.read(params[:id])
+= highlight_file params[:id]

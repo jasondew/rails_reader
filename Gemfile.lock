@@ -4,15 +4,19 @@ dependencies:
     group: 
     - :default
     version: ">= 0"
-  mysql: 
-    group: 
-    - :development
-    version: ">= 0"
   haml: 
     group: 
     - :default
     version: ">= 0"
+  mysql: 
+    group: 
+    - :development
+    version: ">= 0"
   shoulda: 
+    group: 
+    - :test
+    version: ">= 0"
+  mocha: 
     group: 
     - :test
     version: ">= 0"
@@ -20,9 +24,19 @@ dependencies:
     group: 
     - :test
     version: ">= 0"
+  RedCloth: 
+    group: 
+    - :default
+    version: ">= 0"
+  coderay: 
+    group: 
+    - :default
+    version: ">= 0"
 specs: 
 - rake: 
     version: 0.8.7
+- RedCloth: 
+    version: 4.2.3
 - abstract: 
     version: 1.0.0
 - builder: 
@@ -34,10 +48,10 @@ specs:
 - tzinfo: 
     version: 0.3.18
 - activesupport: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - activemodel: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - erubis: 
     version: 2.6.5
@@ -48,7 +62,7 @@ specs:
 - rack-test: 
     version: 0.5.3
 - actionpack: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - mime-types: 
     version: "1.16"
@@ -63,37 +77,41 @@ specs:
 - text-format: 
     version: 1.0.0
 - actionmailer: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - arel: 
     version: 0.3.3
 - activerecord: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - activeresource: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - bundler: 
-    version: 0.9.13
+    version: 0.9.14
+- coderay: 
+    version: 0.9.2
 - factory_girl: 
     version: 1.2.3
     source: 0
 - haml: 
     version: 2.2.22
+- mocha: 
+    version: 0.9.8
 - mysql: 
     version: 2.8.1
 - thor: 
     version: 0.13.4
 - railties: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - rails: 
-    version: 3.0.0.beta1
+    version: 3.0.0.beta2
     source: 2
 - shoulda: 
     version: 2.10.3
     source: 1
-hash: ed60489373e5badfe8ca7df06d47e5eafda11279
+hash: d4513b4afb5baaa29ed3e0d25dfa3c39c1e39f9c
 sources: 
 - Git: 
     uri: git://github.com/thoughtbot/factory_girl.git
@@ -108,6 +126,6 @@ sources:
 - Git: 
     uri: git://github.com/rails/rails.git
     git: git://github.com/rails/rails.git
-    ref: 331327d3919a633679dd3f434d13173fa8df010f
+    ref: f0364d87f03d58312bcab1b2f17b5b56b6c72653
 - Rubygems: 
     uri: http://gemcutter.org
